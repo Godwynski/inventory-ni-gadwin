@@ -36,7 +36,6 @@
             btnStoTra = new Button();
             btnProducts = new Button();
             btnDashboard = new Button();
-            panel2 = new Panel();
             panelMain = new Panel();
             label1 = new Label();
             panel1.SuspendLayout();
@@ -53,9 +52,9 @@
             panel1.Controls.Add(btnProducts);
             panel1.Controls.Add(btnDashboard);
             panel1.Dock = DockStyle.Left;
-            panel1.Location = new Point(0, 54);
+            panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(183, 564);
+            panel1.Size = new Size(183, 618);
             panel1.TabIndex = 0;
             // 
             // btnSettings
@@ -142,23 +141,14 @@
             btnDashboard.UseVisualStyleBackColor = false;
             btnDashboard.Click += btnDashboard_Click;
             // 
-            // panel2
-            // 
-            panel2.BackColor = SystemColors.ActiveCaption;
-            panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(0, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(833, 54);
-            panel2.TabIndex = 1;
-            // 
             // panelMain
             // 
             panelMain.AutoScroll = true;
             panelMain.Controls.Add(label1);
             panelMain.Dock = DockStyle.Fill;
-            panelMain.Location = new Point(183, 54);
+            panelMain.Location = new Point(183, 0);
             panelMain.Name = "panelMain";
-            panelMain.Size = new Size(650, 564);
+            panelMain.Size = new Size(650, 618);
             panelMain.TabIndex = 2;
             // 
             // label1
@@ -177,7 +167,6 @@
             ClientSize = new Size(833, 618);
             Controls.Add(panelMain);
             Controls.Add(panel1);
-            Controls.Add(panel2);
             Name = "Inventory";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Inventory";
@@ -190,7 +179,6 @@
         #endregion
 
         private Panel panel1;
-        private Panel panel2;
         private Panel panelMain;
         private Button btnUserMan;
         private Button btnReports;

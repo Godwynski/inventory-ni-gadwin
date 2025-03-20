@@ -11,7 +11,7 @@ namespace inventory_ni_gadwin
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Inventory());
+            Application.Run(new landing());
         }
     }
 }
