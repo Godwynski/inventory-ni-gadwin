@@ -82,6 +82,7 @@
             userInput.Name = "userInput";
             userInput.Size = new Size(280, 25);
             userInput.TabIndex = 1;
+            userInput.TextChanged += userInput_TextChanged;
             // 
             // label2
             // 
@@ -102,6 +103,7 @@
             passInput.PasswordChar = '●';
             passInput.Size = new Size(280, 25);
             passInput.TabIndex = 3;
+            passInput.TextChanged += passInput_TextChanged;
             // 
             // button1
             // 
@@ -115,6 +117,7 @@
             button1.TabIndex = 4;
             button1.Text = "Login";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // landing
             // 
